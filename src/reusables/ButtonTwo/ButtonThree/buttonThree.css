@@ -1,0 +1,20 @@
+.button-three{
+    width: 217px;
+    height: 62px;
+    /* opacity: 0.5; */
+    background-color: transparent;
+    border: 1px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(192.7deg, #152A47 14.55%, #032555 91.2%);
+}
+
+.button-three > span{
+    font-weight: 600;
+    font-size: 16px;
+    font-family: 'Poppins';
+    line-height: 14px;
+    text-align: center;
+    background: linear-gradient(192.7deg, #152A47 14.55%, #032555 91.2%);
+    background-clip: text;
+    color: transparent;
+}

@@ -1,8 +1,14 @@
 import React from 'react'
+import './buttonOne.css'
+import forwardArrow from '../../assets/arrow-right.png'
 
-function ButtonOne() {
+function ButtonOne({text}) {
   return (
-    <div>ButtonOne</div>
+    <button className='button-one'>
+      {/* <span>{text}</span> */}
+      <span>Learn more</span>
+      <img src={forwardArrow} alt="arrow" />
+    </button>
   )
 }
 
