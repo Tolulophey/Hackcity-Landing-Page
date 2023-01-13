@@ -65,14 +65,14 @@ function Header() {
           </ul>
           }
         </div>
-        <Link>
+        <Link to={'/'}>
         <span>Career</span>
         </Link>
-        <Link>
+        <Link to={'/'}>
         <span>Contact Us</span>
         </Link>
       </nav>
-      <Link>
+      <Link to={'/'}>
       <button>Hire Developers</button>
       </Link>
     </header>

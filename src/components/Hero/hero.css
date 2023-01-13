@@ -1,0 +1,47 @@
+.hero > .container{
+    display: flex;
+    padding-top: 250px;
+    padding-left: 136px;
+}
+.hero > .container >.left{
+    /* display: flex; */
+    width: 50%;
+}
+.hero > .container >.left > h2{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 12px;
+    letter-spacing: 0.03em;
+    color: #EB5757;
+}
+.hero > .container >.left > p{
+    font-size: 22px;
+    width: 533px;
+    height: 132px;
+    line-height: 33px;
+    letter-spacing: 0.03em;
+    color: #3A3A3A;
+    padding-bottom: 45px;
+}
+.hero > .container >.left > .title{
+    width: 672px;
+    height: 198px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 66px;
+    background: linear-gradient(192.7deg, #152A47 14.55%, #032555 91.2%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 45px 0;
+}
+.hero > .container >.left > .buttons > a:first-child{
+    display: inline-block;
+    margin-right: 50px;
+}
+.hero > .container > .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
