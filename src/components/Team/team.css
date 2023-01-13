@@ -3,4 +3,23 @@
     line-height: 28px;
     letter-spacing: 0.02em;
     color: #656464;
+    background: #FFFCF5;
+    padding: 54px 155px 56px 123px;
+}
+.team > h2{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    color: #EB5757;
+}
+.team > .title{
+    width: 728px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 52px;
+    color: #0A093D;
+    margin: 10px 0 33px 0;
+}
+.team > p{
+    margin-bottom: 38px;
 }
