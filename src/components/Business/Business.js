@@ -3,7 +3,10 @@ import "./business.css"
 
 function Business() {
   return (
-    <div>Business</div>
+    <div className='business'>
+      Business
+
+    </div>
   )
 }
 

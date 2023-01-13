@@ -1,15 +1,14 @@
 import React from 'react'
-import Business from '../Business/Business'
 import './about.css'
+import Business from '../Business/Business'
 
 function About() {
   return (
-    <div>
-        <div>
-
-        </div>
-        <Business />
+    // <>
+    <div className='about'>
+    <Business />
     </div>
+    // </>
   )
 }
 

@@ -1,16 +1,17 @@
 import React from "react";
 import Home from './pages/Home'
-import ButtonOne from "./reusables/ButtonOne/ButtonOne";
-import ButtonThree from "./reusables/ButtonTwo/ButtonThree/ButtonThree";
-import ButtonTwo from "./reusables/ButtonTwo/ButtonTwo";
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
+
 
 function App() {
   return (
     <div className="App">
-      <Home />
-      <ButtonOne />
-      <ButtonTwo />
-      <ButtonThree />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </Router>
+      {/* <Home /> */}
     </div>
   );
 }
