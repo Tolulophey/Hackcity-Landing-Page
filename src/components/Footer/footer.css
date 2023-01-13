@@ -1,7 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-.footer{
-    font-family: "Inter" sans-serif;
+footer{
+    font-family: "Inter", sans-serif;
     font-size: 16px;
     line-height: 24px;
     color: #6B7280;
+    background: linear-gradient(192.7deg, #152A47 14.55%, #032555 91.2%);
+    border: 1px solid #000000;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #6B7280;
+    padding: 155px 82px 80px 129px;
+}
+footer a {
+    text-decoration: none;
+    color: inherit;
+}
+footer li{
+    list-style-type: none;
+}
+footer > .top{
+    display: flex;
+}
+footer > .top > .left{
+    margin-right: 172px;
+}
+footer > .top > .left > p{
+    margin: 34px 0;
+    width: 384px;
+}
+footer > .top > .left > .social-media{
+    margin-right: 28px;
+}
+footer > .top > .left > .social-media img{
+    margin-right: 28px;
+}
+footer > .top > .right{
+    display: flex;
+}
+footer > .top > .right > div{
+    margin-right: 32px;
+}
+footer > .top > .right ul{
+    display: flex;
+    flex-direction: column;
+}
+footer > .top > .right h3{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #9CA3AF;
+    margin-bottom: 8px;
+    width: 176px;
+}
+footer > .top > .right a{
+    display: inline-block;
+    margin: 8px 0;
+}
+footer > .top > .right .contact-us > .links > a{
+    display: flex;
+    align-items: center;
+    width: 200px;
+}
+footer > .top > .right .contact-us > .links > a > img{
+    margin-right: 15px;
+}
+footer > .bottom{
+   text-align: center;
+   border-top: 2px solid rgba(255, 255, 255, 0.15);
+   padding-top: 32px;
+   margin-top: 90px;
 }

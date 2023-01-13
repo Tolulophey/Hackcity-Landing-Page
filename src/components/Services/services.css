@@ -18,6 +18,7 @@
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 154px;
+    justify-content: center;
 }
 .services > .service-cards > .service-card{
     display: flex;
