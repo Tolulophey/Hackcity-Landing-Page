@@ -1,0 +1,75 @@
+.about{
+    padding-top: 120px;
+    color: #656464;
+}
+.about > .top{
+    display: flex;
+    margin-bottom: 50px;
+    padding-left: 67px;
+    padding-right: 95px;
+}
+.about > .top > .left{
+    margin-right: 52px;
+}
+.about > .top > .right > h2{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 18px;
+    color: #EB5757;
+}
+.about > .top > .right > p{
+    font-size: 23px;
+    width: 756px;
+    height: 213.01px;
+    line-height: 34px;
+    margin-bottom: 16px;
+}
+.about > .top > .right > .title{
+    width: 400px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.03em;
+    color: #0A093D;
+    margin: 16px 0;
+}
+.about > .bottom > .about-cards{
+    padding-left: 135px;
+}
+.about > .bottom > .about-cards{
+    display: flex;
+}
+/* .about > .bottom > .about-cards > div{
+    display: flex;
+    justify-content: center;
+    width: calc(100%/3);
+} */
+.about > .bottom > .about-cards .about-card{
+    width: 364px;
+    height: 249px;
+    background: #FFFFFF;
+    box-shadow: 14px 22px 52px -12px rgba(127, 127, 127, 0.13);
+    border-radius: 10px;
+    margin-right: 70px;
+}
+.about > .bottom > .about-cards .about-card > .top{
+    display: flex;
+    align-items: center;
+    padding-left: 34px;
+    margin-bottom: 20px;
+}
+
+.about > .bottom > .about-cards .about-card > .top > p{
+    padding-left: 30px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+.about > .bottom > .about-cards .about-card > .bottom{
+    width: 324px;
+    font-size: 23px;
+    font-style: italic;
+    line-height: 34px;
+    padding: 0 20px;
+}

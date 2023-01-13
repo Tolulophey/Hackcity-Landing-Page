@@ -1,0 +1,17 @@
+.business{
+    background-color:#F8F9FF;
+    padding: 0 107px;
+}
+.business > h2{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    letter-spacing: -0.03em;
+    background: linear-gradient(192.7deg, #152A47 14.55%, #032555 91.2%);
+    background-clip: text;
+    padding-top: 40px;
+}
+.business > img{
+    margin-top: 73px;
+    padding-bottom: 43px;
+}
