@@ -9,7 +9,7 @@ function About() {
     <div className='about'>
       <div className="top">
         <div className="left">
-          <img src={aboutImage} alt ="about" />
+          <img src={aboutImage} alt ="about-section" />
         </div>
         <div className="right">
           <h2>Who we are</h2>

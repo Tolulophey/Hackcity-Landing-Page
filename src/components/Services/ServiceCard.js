@@ -8,7 +8,7 @@ function ServiceCard() {
     {
       data.map((service)=>{
         return (
-          <div id={service.idname} className="service-card" key={service.index}>
+          <div id={service.idname} className="service-card" key={service.id}>
             <img src={service.image} alt={service.heading} />
             <p className="title">{service.heading}</p>
             <p>{service.text}</p>

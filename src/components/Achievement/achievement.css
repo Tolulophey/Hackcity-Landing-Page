@@ -1,6 +1,37 @@
 .achievement{
+    display: flex;
     font-size: 18px;
     line-height: 28px;
-    letter-spacing: 0.02em;
     color: #656464;
+    padding: 0 77px 129px 107px;
+}
+
+.achievement > .left{
+    width: 50%;
+}
+.achievement > .left > h2{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 18px;
+    color: #EB5757;
+}
+.achievement > .left > p{
+    width: 581px;;
+}
+.achievement > .left > .title{
+    margin: 31px 0;
+    width: 484px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    color: #0A093D;
+}
+.achievement > .left > .last{
+    margin-top: 20px;
+    margin-bottom: 44px;
+}
+.achievement > .right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
 }

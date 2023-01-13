@@ -17,7 +17,7 @@
 .services > .service-cards{
     display: flex;
     flex-wrap: wrap;
-    
+    padding-bottom: 154px;
 }
 .services > .service-cards > .service-card{
     display: flex;
