@@ -6,11 +6,11 @@
 }
 .hire-us > .left{
     width: 574px;
-    height: 997px;
+    /* height: 997px; */
     text-align: center;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-end; */
     margin-bottom: 110px;
     margin-right: 83px;
     background: #F2F6FD;

@@ -1,10 +1,10 @@
 import React from 'react'
 import './buttonTwo.css'
 
-function ButtonTwo() {
+function ButtonTwo({text, className}) {
     return (
-    <button className='button-two'>
-        <span>Hire Developers</span>
+    <button className={`button2 ${className}`}>
+        <span>{text}</span>
     </button>
     )
 }

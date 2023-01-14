@@ -2,7 +2,6 @@ import React from 'react'
 import Header from '../Header/Header'
 import './hero.css'
 import ButtonTwo from '../../reusables/ButtonTwo/ButtonTwo'
-import ButtonThree from '../../reusables/ButtonThree/ButtonThree'
 import heroImage from '../../assets/hero-image.png'
 import { Link } from 'react-router-dom'
 
@@ -18,10 +17,10 @@ function Hero() {
           <p>Equipped with the resources to jumpstart your idea. Experienced software and business developers for all your needs, simple or complex.</p>
           <div className="buttons">
             <Link to={"/hire"}>
-              <ButtonTwo />
+              <ButtonTwo text={"Hire Developers"} className={'button-two'} />
             </Link>
             <Link to={"/"}>
-              <ButtonThree />
+              <ButtonTwo text={"Contact Us"} className={'button-three'} />
             </Link>
           </div>
         </div>
@@ -33,4 +32,4 @@ function Hero() {
   )
 }
 
-export default Hero
+export default React.memo(Hero)

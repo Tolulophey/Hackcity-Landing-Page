@@ -57,7 +57,8 @@ header > nav > .services > ul {
     line-height: 27px;
     letter-spacing: 0.03em;
     width: 201px;
-    height: 263px;
+    /* height: 263px; */
+    /* height: auto; */
     background-color: #fff;
 }
 header.scrolled > nav > .services > ul {
