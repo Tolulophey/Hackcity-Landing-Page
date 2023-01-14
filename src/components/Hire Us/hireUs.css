@@ -64,6 +64,7 @@
 .hire-us > .right > .progress-step > progress::-webkit-progress-bar{
     background: #D9E7FF;
     color: brown;
+    border-radius: 100px; 
 }
 .hire-us > .right > .progress-step > progress::-webkit-progress-value{
     background: linear-gradient(192.7deg, #152A47 14.55%, #032555 91.2%);
@@ -72,6 +73,7 @@
 .hire-us > .right > .progress-step > progress::-moz-progress-bar{
     background: #D9E7FF;
     color: brown;
+    border-radius: 100px; 
 }
 .hire-us > .right > .progress-step > progress::-moz-progress-value{
     background: linear-gradient(192.7deg, #152A47 14.55%, #032555 91.2%);

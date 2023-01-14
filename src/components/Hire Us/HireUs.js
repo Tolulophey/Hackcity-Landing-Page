@@ -34,7 +34,7 @@ function HireUs() {
             break;
         case 1:
             background = background2
-            percent = 40
+            percent = 20
             text = "Two"
             break;
         default:

@@ -1,0 +1,73 @@
+form{
+    padding-top: 83px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #656464;
+}
+
+form > .question{
+    display: flex;
+    margin-bottom: 25px;
+}
+form > .question > img{
+    margin-right: 14px;
+    object-fit: contain;
+}
+form > .question > p > span{
+    display: inline-block;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    background: linear-gradient(192.7deg, #152A47 14.55%, #032555 91.2%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+form > .options{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 41px;
+}
+form > .options > .form-options{
+    display: flex;
+    align-items: center;
+    margin-right: 9px;
+    margin-bottom: 12px;
+    width: 355px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 0.7px solid #C0C0C0;
+    border-radius: 5px;
+}
+/* form > .options > .form-options > label{
+    
+} */
+form > .options > .form-options > input[type="radio"]{
+    margin-right: 23px;
+    margin-left: 14px;
+}
+form > .options > .form-options > input[type="radio"]::before{
+    background: #A6C5F1;
+    border: 1px solid #2679ED;
+    border-radius: 100px;
+}
+
+form > textarea {
+    width: 733px;
+    height: 170px;
+    background: #FFFFFF;
+    border: 0.7px solid #C0C0C0;
+    border-radius: 5px;
+}
+form > .button {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 43px;
+}
+form > .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 43px;
+}
