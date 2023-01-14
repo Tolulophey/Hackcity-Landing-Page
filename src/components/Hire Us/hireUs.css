@@ -1,0 +1,79 @@
+.hire-us{
+    display: flex;
+    font-size: 16px;
+    line-height: 24px;
+    color: #656464;
+}
+.hire-us > .left{
+    width: 574px;
+    height: 997px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 110px;
+    margin-right: 83px;
+    background: #F2F6FD;
+    padding-top: 112px;
+}
+.hire-us > .left > h2{
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 54px;
+    background: linear-gradient(192.7deg, #152A47 14.55%, #032555 91.2%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.hire-us > .left > p{
+    margin-bottom: 95px;
+}
+.hire-us > .left > img{
+    margin-top: auto;
+}
+.hire-us > .right{
+    padding-right: 50px;
+}
+.hire-us > .right > .heading{
+    font-weight: 600;
+    width: 578px;
+    font-size: 20px;
+    line-height: 30px;
+    background: linear-gradient(192.7deg, #152A47 14.55%, #032555 91.2%);
+    background-clip: text;
+    margin: 100px 0 54px 0px;
+}
+.hire-us > .right > .progress-step{
+    width: 100%;
+}
+.hire-us > .right > .progress-step > label{
+    display: block;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.hire-us > .right > .progress-step > progress{
+    width: 100%;
+    width: 733px;
+    background: #D9E7FF;
+    accent-color: brown;
+    border-radius: 100px;
+    background: linear-gradient(192.7deg, #152A47 14.55%, #032555 91.2%);
+    background-clip: text;
+    height: 13px;
+}
+.hire-us > .right > .progress-step > progress::-webkit-progress-bar{
+    background: #D9E7FF;
+    color: brown;
+}
+.hire-us > .right > .progress-step > progress::-webkit-progress-value{
+    background: linear-gradient(192.7deg, #152A47 14.55%, #032555 91.2%);
+    border-radius: 100px; 
+}
+.hire-us > .right > .progress-step > progress::-moz-progress-bar{
+    background: #D9E7FF;
+    color: brown;
+}
+.hire-us > .right > .progress-step > progress::-moz-progress-value{
+    background: linear-gradient(192.7deg, #152A47 14.55%, #032555 91.2%);
+    border-radius: 100px; 
+}

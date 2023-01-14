@@ -9,6 +9,20 @@ header{
     padding-left: 140px;
     padding-right: 85px;
 }
+header.scrolled{
+    background: linear-gradient(192.7deg, #152A47 14.55%, #032555 91.2%);
+    color: #fff;
+}
+header > .logo > .logo-text{
+    display: flex;
+    align-items: center;
+}
+header > .logo > .logo-text > p{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    margin-left: 10px;
+}
 nav{
     display: flex;
     align-items: center;
@@ -27,13 +41,17 @@ header > nav > .services{
     letter-spacing: 0.01em;
     color: #656464;    background: transparent;
 }
+header.scrolled > nav > .services{
+    color: #fff;
+}
 header > nav > .services img{
     margin-left: 5px;
 }
 header > nav > .services > ul {
     position: absolute;
     top: 20px;
-    padding: 20px 0 50px 0;
+    left: -20px;
+    padding: 20px 0px 50px 20px;
     font-weight: 400;
     font-size: 18px;
     line-height: 27px;
@@ -41,6 +59,9 @@ header > nav > .services > ul {
     width: 201px;
     height: 263px;
     background-color: #fff;
+}
+header.scrolled > nav > .services > ul {
+    background: linear-gradient(192.7deg, #152A47 14.55%, #032555 91.2%);
 }
 
 header  a {
