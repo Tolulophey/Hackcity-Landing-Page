@@ -11,7 +11,9 @@
     background-clip: text;
     padding-top: 40px;
 }
-.business > img{
-    margin-top: 73px;
-    padding-bottom: 43px;
+.business > .images > img{
+    margin: 73px 102px 43px 0;
+}
+.business > .images > .business-image-7{
+    margin-right: 0px;
 }
