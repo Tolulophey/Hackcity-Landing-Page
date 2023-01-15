@@ -5,7 +5,7 @@ import { FormContext } from '../../pages/Hire'
 
 
 function FormOne() {
-    const {step, setStep} = useContext(FormContext)
+    const {handleNext, setFormData, formData} = useContext(FormContext)
     const data = [
         {
             text: "SaaS (Software as a Service) Development",
@@ -48,14 +48,8 @@ function FormOne() {
             value: "consultation"
         },
     ]
-    const handleNext = (e)=>{
-        e.preventDefault()
-        if(step < 5){
-            setStep((prevStep)=> prevStep + 1)
-        }
-    }
     return (
-    <form >
+    <form className='page-one'>
         <div className='question'>
             <img src={labelDot} alt="label-dot" />
             <p>What can <span>Hack City Tech</span> do for you?</p>
@@ -64,7 +58,13 @@ function FormOne() {
             {data.map((service, index)=>{
                 return (
                     <div className='form-options' key={index+1}>
-                        <input type="radio" name="service" id={service.value} value={service.value}/>
+                        <input 
+                            type="radio" 
+                            name="service" 
+                            id={service.value} 
+                            value={service.value} 
+                            onChange={e=>setFormData({...formData, service: e.target.value})}
+                        />
                         <label htmlFor={service.value}>{service.text}</label>
                     </div>
                 )
@@ -74,9 +74,13 @@ function FormOne() {
             <img src={labelDot} alt="label-dot" />
             <p>What can <span>Hack City Tech</span> do for you?</p>
         </div>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <textarea 
+            name="serviceDesc" 
+            value={formData.serviceDesc} 
+            onChange={e=>setFormData({...formData, serviceDesc: e.target.value})} 
+            ></textarea>
         <div className="button">
-            <NextButton handleNext={handleNext} />
+            <NextButton type={"button"} text={"Next"} handleClick={handleNext} />
         </div>
     </form>
     )

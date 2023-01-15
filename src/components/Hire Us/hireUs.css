@@ -8,15 +8,15 @@
     width: 574px;
     /* height: 997px; */
     text-align: center;
-    /* display: flex;
+    display: flex;
     flex-direction: column;
-    justify-content: flex-end; */
+    justify-content: space-between;
     margin-bottom: 110px;
     margin-right: 83px;
     background: #F2F6FD;
     padding-top: 112px;
 }
-.hire-us > .left > h2{
+.hire-us > .left  h2{
     font-weight: 600;
     font-size: 36px;
     line-height: 54px;
@@ -25,12 +25,25 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
-.hire-us > .left > p{
-    margin-bottom: 95px;
+.hire-us > .left > .step-one-background-image,
+.hire-us > .left > .step-two-background-image{
+    margin-top: 95px;
 }
-.hire-us > .left > img{
+.hire-us > .left > .step-two-background-image{
+    margin-top: 0px;
+}
+.hire-us > .left > .step-three-background-image{
+    margin-top: 103px;
+    margin-bottom: 118px;
+}
+/* .hire-us > .left > .step-four-background-image,
+.hire-us > .left > .step-five-background-image,
+.hire-us > .left > .step-six-background-image{
+    margin-top: 308px;
+} */
+/* .hire-us > .left > img{
     margin-top: auto;
-}
+} */
 .hire-us > .right{
     padding-right: 50px;
 }

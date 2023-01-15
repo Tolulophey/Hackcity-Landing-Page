@@ -4,10 +4,10 @@ import frontArrow from '../../assets/arrow-right.png'
 
 
 
-function NextButton({handleNext}) {
+function NextButton({handleClick, text, type}) {
   return (
-    <button type='button' className='form-button next' onClick={handleNext}>
-        <span>Next </span>
+    <button type={type} className='form-button next' onClick={handleClick}>
+        <span>{text}</span>
         <img src={frontArrow} alt="front-arrow" />
     </button>
   )

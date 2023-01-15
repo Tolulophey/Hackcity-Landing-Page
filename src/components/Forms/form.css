@@ -11,6 +11,9 @@ form > .question{
     display: flex;
     margin-bottom: 25px;
 }
+form.page-five > .question{
+    margin-bottom: 35px;
+}
 form > .question > img{
     margin-right: 14px;
     object-fit: contain;
@@ -30,6 +33,23 @@ form > .options{
     flex-wrap: wrap;
     margin-bottom: 41px;
 }
+form.page-five > .details{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 52px;
+}
+
+form.page-two > .options{
+    margin-bottom: 62px;
+}
+form.page-three > .options{
+    display: block;
+    margin-bottom: 54px;
+}
+
+form.page-four > .options{
+    display: block;
+}
 form > .options > .form-options{
     display: flex;
     align-items: center;
@@ -41,9 +61,31 @@ form > .options > .form-options{
     border: 0.7px solid #C0C0C0;
     border-radius: 5px;
 }
-/* form > .options > .form-options > label{
-    
-} */
+form.page-five > .details > .form-details{
+    display: flex;
+    flex-direction: column;
+    margin-right: 28px;
+    margin-bottom: 35px;
+}
+form.page-five > .details > .form-details > label{
+    display: block;
+    margin-bottom: 8px;
+}
+form.page-five > .details > .form-details > input{
+    width: 303px;
+    height: 41px;
+    background: #FEFEFE;
+    border: 0.8px solid #C0C0C0;
+    border-radius: 5px;
+    padding: 12px 11px;
+}
+form.page-five > .details > .form-details > input::placeholder{
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #C0C0C0;
+}
+
 form > .options > .form-options > input[type="radio"]{
     margin-right: 23px;
     margin-left: 14px;
@@ -70,4 +112,21 @@ form > .buttons {
     display: flex;
     justify-content: space-between;
     margin-top: 43px;
+    margin-bottom: 93px;
+}
+form.page-two > .buttons {
+    margin-top: 25px;
+    margin-bottom: 146px;
+}
+form.page-three > .buttons {
+    margin-top: 48px;
+    margin-bottom: 146px;
+}
+form.page-four > .buttons {
+    margin-top: 308px;
+    margin-bottom: 146px;
+}
+form.page-five > .buttons {
+    margin-top: 45px;
+    margin-bottom: 146px;
 }

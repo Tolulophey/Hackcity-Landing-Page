@@ -46,9 +46,11 @@ function HireUs() {
     return (
     <div className='hire-us'>
         <div className="left">
-            <h2>Hire Us</h2>
-            <p>Step {text}</p>
-            <img src={background} alt={`form-${step}-background`} />
+            <div>
+                <h2>Hire Us</h2>
+                <p>Step {text}</p>
+            </div>
+            <img src={background} alt={`step-${text.toLowerCase()}-background`} className={`step-${text.toLowerCase()}-background-image`} />
         </div>
         <div className="right">
             <p className='heading'>We boast of highly skilled and experienced tech personnel. We handle every projects with experience</p>

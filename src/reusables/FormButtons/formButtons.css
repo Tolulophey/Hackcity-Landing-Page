@@ -9,14 +9,12 @@
     text-align: center;
     color: #C0C0C0;
 }
-button.submit,
 button.next{
     background: linear-gradient(192.7deg, #152A47 14.55%, #032555 91.2%);
 }
 button.previous{
     background: #EEF2FF;
 }
-button.submit > img,
 button.next > img{
     margin-left: 15px;
 }
@@ -24,7 +22,6 @@ button.next > img{
 button.previous > img{
     margin-right: 29px;
 }
-button.submit > span,
 button.next > span{
     display: inline-block;
     width: 97px;
