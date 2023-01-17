@@ -16,7 +16,7 @@ function Hero() {
           <p className='title'>Tech Innovation and Business Development Hub</p>
           <p>Equipped with the resources to jumpstart your idea. Experienced software and business developers for all your needs, simple or complex.</p>
           <div className="buttons">
-            <Link to={"/hire"}>
+            <Link to={"/hire-us"}>
               <ButtonTwo text={"Hire Developers"} className={'button-two'} />
             </Link>
             <Link to={"/"}>

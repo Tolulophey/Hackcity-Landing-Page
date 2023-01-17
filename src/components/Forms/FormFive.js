@@ -53,8 +53,9 @@ function FormFive() {
                             type={field.type} 
                             name={field.name} 
                             id={field.name} 
+                            placeholder={field.placeholder}
                             value={formData[field.name]}
-                            onChange={e=>handleChange(e)}
+                            onChange={e => handleChange(e)}
                         />
                     </div>
                 )

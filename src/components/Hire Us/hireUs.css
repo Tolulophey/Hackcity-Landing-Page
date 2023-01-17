@@ -7,6 +7,7 @@
 .hire-us > .left{
     width: 574px;
     /* height: 997px; */
+    position: relative;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -15,6 +16,11 @@
     margin-right: 83px;
     background: #F2F6FD;
     padding-top: 112px;
+}
+.hire-us > .left > .arrow-left{
+    position: absolute;
+    top: 96px;
+    left: 54px;
 }
 .hire-us > .left  h2{
     font-weight: 600;

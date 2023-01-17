@@ -55,11 +55,14 @@ form > .options > .form-options{
     align-items: center;
     margin-right: 9px;
     margin-bottom: 12px;
-    width: 355px;
+    width: 357px;
     height: 44px;
     background: #FFFFFF;
     border: 0.7px solid #C0C0C0;
     border-radius: 5px;
+}
+form > .options > .form-options > label{
+    width: 100%;
 }
 form.page-five > .details > .form-details{
     display: flex;
@@ -79,6 +82,14 @@ form.page-five > .details > .form-details > input{
     border-radius: 5px;
     padding: 12px 11px;
 }
+form.page-five > .details > .form-details > input:focus,
+form > textarea:focus{
+    outline: none;
+    border: solid 1px transparent;
+    background-image: linear-gradient(white, white), linear-gradient(192.7deg, #152A47 14.55%, #032555 91.2%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
 form.page-five > .details > .form-details > input::placeholder{
     font-size: 11px;
     line-height: 16px;
@@ -89,11 +100,23 @@ form.page-five > .details > .form-details > input::placeholder{
 form > .options > .form-options > input[type="radio"]{
     margin-right: 23px;
     margin-left: 14px;
+  /* remove standard background appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* create custom radiobutton appearance */
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+    /* background-color only for content */
+  background-clip: content-box;
+  border: 1px solid #2679ED;
+  background: #A6C5F1;
+  border-radius: 50%;
 }
-form > .options > .form-options > input[type="radio"]::before{
-    background: #A6C5F1;
-    border: 1px solid #2679ED;
-    border-radius: 100px;
+
+form > .options > .form-options > input[type="radio"]:checked {
+  background: linear-gradient(192.7deg, #152A47 14.55%, #032555 91.2%)
 }
 
 form > textarea {
@@ -102,6 +125,7 @@ form > textarea {
     background: #FFFFFF;
     border: 0.7px solid #C0C0C0;
     border-radius: 5px;
+    padding: 12px 11px;
 }
 form > .button {
     display: flex;

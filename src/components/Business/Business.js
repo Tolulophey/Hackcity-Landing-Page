@@ -16,6 +16,7 @@ function Business() {
       <div className="images">
         {image.map((image, index)=>{
           return <img 
+                  key={index+1}
                   src={image} 
                   alt="successful-business" 
                   className={`business-image-${index+1}`} 

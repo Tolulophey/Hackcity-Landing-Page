@@ -7,9 +7,12 @@ import Forms from '../Forms/Forms'
 import Progress from '../Forms/Progress'
 import './hireUs.css'
 import { FormContext } from '../../pages/Hire'
+import arrowLeft from "../../assets/hireus-arrow-left.png"
+import { useNavigate } from 'react-router-dom'
 
 function HireUs() {
     const {step} = useContext(FormContext)
+    const navigate = useNavigate()
     let background, text, percent
     switch (step) {
         case 5:
@@ -46,6 +49,12 @@ function HireUs() {
     return (
     <div className='hire-us'>
         <div className="left">
+            <img 
+                src={arrowLeft} 
+                className="arrow-left" 
+                alt="back-arrow"
+                onClick={()=> navigate(-1)}
+            />
             <div>
                 <h2>Hire Us</h2>
                 <p>Step {text}</p>
