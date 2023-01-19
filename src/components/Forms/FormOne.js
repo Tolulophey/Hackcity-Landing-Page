@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import labelDot from '../../assets/form-dot.png'
 import NextButton from '../../reusables/FormButtons/NextButton'
 import { FormContext } from '../../pages/Hire'
@@ -6,6 +6,8 @@ import { FormContext } from '../../pages/Hire'
 
 function FormOne() {
     const {handleNext, setFormData, formData} = useContext(FormContext)
+    const [serviceError, setServiceError] = useState(false)
+    const [serviceDescError, setServiceDescError] = useState(false)
     const data = [
         {
             text: "SaaS (Software as a Service) Development",
@@ -61,7 +63,9 @@ function FormOne() {
                         <input 
                             type="radio" 
                             name="service" 
-                            id={service.value} 
+                            id={service.value}      
+                            onClick={()=> {if(serviceError) setServiceError(false)}}
+                            checked= {formData.service === service.value}
                             value={service.value} 
                             onChange={e=>setFormData({...formData, service: e.target.value})}
                         />
@@ -70,17 +74,25 @@ function FormOne() {
                 )
             })}
         </div>
+        {serviceError && <small>field cannot be empty</small>}
         <div className='question'>
             <img src={labelDot} alt="label-dot" />
             <p>What can <span>Hack City Tech</span> do for you?</p>
         </div>
         <textarea 
             name="serviceDesc" 
-            value={formData.serviceDesc} 
+            value={formData.serviceDesc}
+            onClick={()=> {if(serviceDescError) setServiceDescError(false)}}
             onChange={e=>setFormData({...formData, serviceDesc: e.target.value})} 
-            ></textarea>
+        ></textarea>
+        {serviceDescError && <small>field cannot be empty</small>}
+        
         <div className="button">
-            <NextButton type={"button"} text={"Next"} handleClick={handleNext} />
+            <NextButton 
+            type={"button"} 
+            text="Next" 
+            handleClick={()=>handleNext(formData.service, formData.serviceDesc, setServiceError, setServiceDescError)} 
+            />
         </div>
     </form>
     )

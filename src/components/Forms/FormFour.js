@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import labelDot from '../../assets/form-dot.png'
 import NextButton from '../../reusables/FormButtons/NextButton'
 import PreviousButton from '../../reusables/FormButtons/PreviousButton'
@@ -6,6 +6,7 @@ import { FormContext } from '../../pages/Hire'
 
 function FormFour() {
     const { handleNext, handlePrevious, formData, setFormData} = useContext(FormContext)
+    const [estimateError, setEstimateError] = useState(false)
     const data = [
         {
             text: "$1,000 - $3,000+",
@@ -39,6 +40,8 @@ function FormFour() {
                             name="estimate" 
                             id={service.value} 
                             value={service.value} 
+                            onClick={()=> {if(estimateError) setEstimateError(false)}}
+                            checked= {formData.estimate === service.value}
                             onChange={e=>setFormData({...formData, estimate: e.target.value})}
                         />
                         <label htmlFor={service.value}>{service.text}</label>
@@ -46,9 +49,14 @@ function FormFour() {
                 )
             })}
         </div>
+        {estimateError && <small>field cannot be empty</small>}
         <div className="buttons">
             <PreviousButton handlePrevious={handlePrevious} />
-            <NextButton type={"button"} text={"Next"} handleClick={handleNext} />
+            <NextButton 
+            type={"button"} 
+            text={"Next"} 
+            handleClick={()=>handleNext(formData.estimate, null, setEstimateError, null)} 
+            />
         </div>
     </form>
     )

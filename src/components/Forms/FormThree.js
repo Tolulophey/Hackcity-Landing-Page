@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import labelDot from '../../assets/form-dot.png'
 import NextButton from '../../reusables/FormButtons/NextButton'
 import PreviousButton from '../../reusables/FormButtons/PreviousButton'
@@ -7,6 +7,9 @@ import { FormContext } from '../../pages/Hire'
 
 function FormThree() {
     const {handleNext, handlePrevious,formData, setFormData} = useContext(FormContext)
+    const [timelineError, setTimelineError] = useState(false)
+    const [startTimeError, setStartTimeError] = useState(false)
+    
     const data1 = [
         {
             text: "Short term (Up to 3 months)",
@@ -40,6 +43,7 @@ function FormThree() {
             value: "not decided"
         }
     ]
+
     return (
     <form className='page-three' >
         <div className='question'>
@@ -54,7 +58,9 @@ function FormThree() {
                             type="radio" 
                             name="timeline" 
                             id={service.value} 
-                            value={service.value} 
+                            value={service.value}
+                            onClick={()=> {if(timelineError) setTimelineError(false)}}
+                            checked= {formData.timeline === service.value} 
                             onChange={e=>setFormData({...formData, timeline: e.target.value})}
                         />
                         <label htmlFor={service.value}>{service.text}</label>
@@ -62,6 +68,7 @@ function FormThree() {
                 )
             })}
         </div>
+        {timelineError && <small>field cannot be empty</small>}
         <div className='question'>
             <img src={labelDot} alt="label-dot" />
             <p>When are you likely to start this project ?</p>
@@ -74,7 +81,9 @@ function FormThree() {
                             type="radio" 
                             name="startTime" 
                             id={service.value} 
-                            value={service.value} 
+                            value={service.value}
+                            onClick={()=> {if(startTimeError) setStartTimeError(false)}}
+                            checked= {formData.startTime === service.value} 
                             onChange={e=>setFormData({...formData, startTime: e.target.value})}
                         />
                         <label htmlFor={service.value}>{service.text}</label>
@@ -82,9 +91,10 @@ function FormThree() {
                 )
             })}
         </div>
+        {startTimeError && <small>field cannot be empty</small>}
         <div className="buttons">
             <PreviousButton handlePrevious={handlePrevious} />
-            <NextButton type={"button"} text={"Next"} handleClick={handleNext} />
+            <NextButton type={"button"} text={"Next"} handleClick={()=>handleNext(formData.timeline, formData.startTime, setTimelineError, setStartTimeError)} />
         </div>
     </form>
     )

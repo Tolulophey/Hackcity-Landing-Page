@@ -20,23 +20,37 @@ function Hire() {
     position: "",
     otherCompanyInfo: ""
   })
-  const handleNext = (e)=>{
-      e.preventDefault()
-      if(step < 5){
-          setStep((prevStep)=> prevStep + 1)
-      }
+  const handleNext2 = (field1, setField1) => {
+    if(field1=== "" ){
+      return setField1(true)
+    } else if(step < 5){
+        setStep((prevStep)=> prevStep + 1)
+    }
   }
-  const handlePrevious = (e)=>{
-    e.preventDefault()
+  const handleNext = (field1, field2, setField1, setField2) => {
+    if(field1=== "" && field2 !== ""){
+      return setField1(true)
+    } else if(field1 !== "" && field2 === ""){
+        return setField2(true)
+    } else if(field1 === "" && field2 === ""){
+        setField1(true)
+        setField2(true)
+        return 0
+    } else if(step < 5){
+        setStep((prevStep)=> prevStep + 1)
+    }
+  }
+  const handlePrevious = ()=>{
     if(step > 0){
         setStep((prevStep)=> prevStep - 1)
     }
   }
   const handleSubmit = (e)=>{
       e.preventDefault()
-      if(step > 0){
-          setStep((prevStep)=> prevStep - 1)
+      if(step < 5){
+          setStep((prevStep)=> prevStep + 1)
       }
+      console.log(formData)
   }
   return (
     <>
@@ -46,6 +60,7 @@ function Hire() {
         formData: formData,
         setFormData: setFormData,
         handleNext: handleNext,
+        handleNext2: handleNext2,
         handlePrevious: handlePrevious,
         handleSubmit: handleSubmit
     }}>

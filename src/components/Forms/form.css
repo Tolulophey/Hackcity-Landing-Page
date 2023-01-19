@@ -14,6 +14,7 @@ form > .question{
 form.page-five > .question{
     margin-bottom: 35px;
 }
+
 form > .question > img{
     margin-right: 14px;
     object-fit: contain;
@@ -154,3 +155,35 @@ form.page-five > .buttons {
     margin-top: 45px;
     margin-bottom: 146px;
 }
+
+.submit-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.submit-page > img{
+    margin-top: 152px;
+}
+.submit-page > p{
+    width: 400px;
+    margin-top: 27px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 165px;
+}
+.submit-page button{
+    background: linear-gradient(192.7deg, #152A47 14.55%, #032555 91.2%);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 14px;
+    text-align: center;
+    color: #C0C0C0;
+    width: 210px;
+    height : 48px;
+    margin-bottom: 151px;
+}
+small{
+    color: red;
+}
+

@@ -73,3 +73,13 @@
     line-height: 34px;
     padding: 0 20px;
 }
+
+@media screen and (max-width: 900px) {
+    .about{
+        background-color: aqua;
+    }
+    .about > .top {
+        margin-bottom: 50px;
+        padding-left: 0 50px;
+    }
+}
