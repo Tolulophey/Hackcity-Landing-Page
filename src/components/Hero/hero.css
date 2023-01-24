@@ -43,3 +43,37 @@
     align-items: center;
     width: 50%;
 }
+@media screen and (max-width:900px) {
+    .hero > .container {
+        display: flex;
+        padding: 200px 50px 0 50px;
+    }
+    .hero > .container > .right > img {
+        width: 80%;
+    }
+    .hero > .container >.left > p {
+        width: 100%;
+        min-height: 132px;
+        height: auto;
+    }
+    .hero > .container >.left > .title {
+        width: 100%;
+        min-height: 198px;
+        height: auto;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 50px;
+        margin: 45px 0;
+    }
+    .hero > .container >.left > .buttons{
+        display: flex;
+    }
+    .button2 {
+        width: 175px;
+        height: 62px;
+    }
+    .hero > .container >.left > .buttons > a:first-child {
+        margin-right: 20px;
+    }
+
+}

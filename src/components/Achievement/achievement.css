@@ -35,3 +35,21 @@
     display: flex;
     justify-content: center;
 }
+@media screen and (max-width:900px) {
+    .achievement {
+        display: flex;
+        padding: 0 50px 129px 50px;
+    }
+    .achievement > .right > img {
+        width: 80%;
+    }
+    .achievement > .left > .title {
+        margin: 31px 0;
+        width: 100%;
+        font-size: 25px;
+        line-height: 48px;
+    }
+    .achievement > .left > p {
+        width: 100%;
+    }
+}

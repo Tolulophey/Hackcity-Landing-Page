@@ -24,3 +24,15 @@
     margin-bottom: 38px;
     width: 1100px;
 }
+@media screen and (max-width:1100px) {
+    .team {
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+        padding: 54px 50px 56px 50px;
+    }
+    .team > p {
+        margin-bottom: 38px;
+        width: 100%;
+    }
+}

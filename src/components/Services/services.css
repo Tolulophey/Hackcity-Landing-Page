@@ -59,3 +59,29 @@
 .services > .service-cards > .service-card > .learn-more > img{
     margin-right: 19px;
 }
+@media screen and (max-width: 900px) {
+    .services {
+        padding: 0 50px;
+    }
+    .services > .service-cards > .service-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 383px;
+        width: calc(92%/2);
+        height: 453px;
+        padding: 46px 25px;
+        margin-bottom: 43px;
+    }
+    .services > .service-cards > .service-card:nth-child(odd) {
+        margin-left: 0%;
+        margin-right: 2%;
+    }
+    .services > .service-cards > .service-card:nth-child(even) {
+        margin-left: 2%;
+        margin-right: 0%;
+    }
+    .services > .service-cards > .service-card > p {
+        width: 100%;
+    }
+    }

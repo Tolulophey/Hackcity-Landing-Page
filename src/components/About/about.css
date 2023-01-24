@@ -1,5 +1,6 @@
 .about{
     padding-top: 120px;
+    padding-bottom: 50px;
     color: #656464;
 }
 .about > .top{
@@ -75,11 +76,54 @@
 }
 
 @media screen and (max-width: 900px) {
-    .about{
-        background-color: aqua;
-    }
     .about > .top {
         margin-bottom: 50px;
-        padding-left: 0 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .about > .top >.left {
+        width: 50%;
+    }
+    .about > .top >.left > img {
+        width: 100%;
+    }
+    .about > .top > .right {
+        width: 50%;
+    }
+    .about > .top > .right > p {
+        font-size: 18px;
+        width: 100%;
+        height: auto;
+        line-height: 28px;
+        margin-bottom: 16px;
+    }
+    .about > .bottom > .about-cards {
+        padding:0 50px;
+    }
+    .about > .bottom > .about-cards .about-card {
+        width: calc(96%/3);
+        min-height: 249px;
+        height: auto;
+        border-radius: 10px;
+        margin-right: 0;
+    }
+    .about > .bottom > .about-cards .about-card:nth-child(2) {
+        margin: 0 2%;
+    }
+    .about > .bottom > .about-cards .about-card > .top {
+        padding-left: 10px;
+        padding-top: 20px;
+    }
+    .about > .bottom > .about-cards .about-card > .top > p {
+        padding-left: 10px;
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .about > .bottom > .about-cards .about-card > .bottom {
+        width: 100%;
+        font-size: 18px;
+        font-style: italic;
+        line-height: 28px;
+        padding: 0 20px;
     }
 }

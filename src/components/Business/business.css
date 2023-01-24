@@ -17,3 +17,15 @@
 .business > .images > .business-image-7{
     margin-right: 0px;
 }
+
+@media screen and (max-width:900px) {
+    .business {
+        padding: 0 50px;
+    }
+    .business > .images {
+        text-align: center;
+    }
+    .business > .images > img {
+        margin: 20px 30px 20px 0;
+    }
+}
