@@ -45,7 +45,7 @@ function FormTwo() {
         }
     ]
     return (
-    <form className='page-two' >
+    <form method='post' className='page-two' >
         <div className='question'>
             <img src={labelDot} alt="label-dot" />
             <p>What is the Application/Product Domain?</p>

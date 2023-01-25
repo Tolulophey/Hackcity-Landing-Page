@@ -51,7 +51,7 @@ function FormOne() {
         },
     ]
     return (
-    <form className='page-one'>
+    <form method='post' className='page-one'>
         <div className='question'>
             <img src={labelDot} alt="label-dot" />
             <p>What can <span>Hack City Tech</span> do for you?</p>

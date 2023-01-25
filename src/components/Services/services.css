@@ -85,3 +85,22 @@
         width: 100%;
     }
     }
+@media screen and (max-width:500px) {
+    /* footer > .top > .left {
+        display: flex;
+        flex-direction: column;
+    } */
+    .services > .service-cards {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .services > .service-cards > .service-card {
+        width: 100%;
+    }
+    .services > .service-cards > .service-card:nth-child(odd) {
+        margin: 0;
+    }
+    .services > .service-cards > .service-card:nth-child(even) {
+        margin: 0;
+    }
+}

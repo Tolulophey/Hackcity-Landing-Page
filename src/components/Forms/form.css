@@ -185,5 +185,6 @@ form.page-five > .buttons {
 }
 small{
     color: red;
+    display: inline-block;
 }
 

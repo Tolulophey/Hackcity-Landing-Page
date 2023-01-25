@@ -127,3 +127,41 @@
         padding: 0 20px;
     }
 }
+
+@media screen and (max-width:500px) {
+    .about > .top {
+        flex-direction: column;
+    }
+    .about > .top >.left {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        order: 2;
+    }
+    .about > .top >.right {
+        width: 100%;
+    }
+    .about > .top > .right > p {
+        width: 250px;
+        height: auto;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .about > .top > .right > .title {
+        width: 262px;
+        font-size: 21px;
+        line-height: 28px;
+    }
+    .about > .bottom > .about-cards {
+        flex-direction: column;
+    }
+    .about > .bottom > .about-cards .about-card {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width:300px) {
+    .about > .top > .right > p {
+        width: 100%;
+    }
+}

@@ -91,3 +91,40 @@
     background: linear-gradient(192.7deg, #152A47 14.55%, #032555 91.2%);
     border-radius: 100px; 
 }
+
+@media screen and (max-width:900px) {
+    .hire-us > .left {
+        width: 40%;
+        margin-right: 0;
+    }
+    .hire-us > .right {
+        padding: 0 25px;
+        width: 60%;
+    }
+    .hire-us > .right > .heading {
+        width: 100%;
+    }
+    .hire-us > .right > .progress-step > progress {
+        width: 100%;
+    }
+    form.page-five > .details > .form-details {
+        width: 48%;
+        margin: 0;
+    }
+    form.page-five > .details > .form-details:nth-child(odd) {
+        margin-right: 2%;
+    }
+    form.page-five > .details > .form-details:nth-child(even) {
+        margin-left: 2%;
+    }
+    form.page-five > .details > .form-details > input {
+        width: 100%;
+    }
+    form > textarea {
+        width: 100%;
+    }
+    .form-button {
+        width: 175px;
+        height: 48px;
+    }
+}

@@ -29,3 +29,20 @@
         margin: 20px 30px 20px 0;
     }
 }
+@media screen and (max-width:900px) {
+    .business > h2 {
+        letter-spacing: 0.03em;
+        padding-top: 40px;
+        font-size: 21px;
+        line-height: 28px;
+    }
+    .business > .images {
+        text-align: center;
+        /* padding: 30px; */
+    }
+    .business > .images > img {
+        /* object-fit: contain; */
+        margin: 20px 17px 20px 0;
+        width: 40px;
+    }
+}

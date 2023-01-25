@@ -77,3 +77,41 @@
     }
 
 }
+@media screen and (max-width:500px) {
+    .hero > .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .hero > .container >.left {
+        width: 100%;
+    }
+    .hero > .container >.right {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .hero > .container >.left > p {
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .hero > .container >.left > .title {
+        font-size: 24px;
+        line-height: 28px;
+        min-height: auto;
+        margin: 20px 0;
+        width: 234px;
+    }
+    .hero > .container >.left > .buttons {
+        flex-direction: column;
+    }
+    .hero > .container >.left > .buttons > a:first-child {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+}
+@media screen and (max-width:300px) {
+    .hero > .container >.left > .title {
+        width: 100%;
+    }
+}

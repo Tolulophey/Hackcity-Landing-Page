@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 footer{
     font-family: "Inter", sans-serif;
+    width: 100%;
     font-size: 16px;
     line-height: 24px;
     color: #6B7280;
@@ -25,7 +26,11 @@ footer > .top{
 footer > .top > .left{
     margin-right: 172px;
 }
-footer > .top > .left > p{
+/* footer > .top > .left > .description > img{
+    object-fit: contain;
+    margin-right: 23px;
+} */
+footer > .top > .left > .description > p{
     margin: 34px 0;
     width: 384px;
 }
@@ -72,4 +77,74 @@ footer > .bottom{
    border-top: 2px solid rgba(255, 255, 255, 0.15);
    padding-top: 32px;
    margin-top: 90px;
+}
+@media screen and (max-width:900px) {
+    footer {
+        padding: 50px 50px 80px 50px;
+    }
+    footer > .top {
+        width: 100%;
+        display: block;
+    }
+    footer > .top > .left {
+        margin-bottom: 50px;
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer > .top > .left > .description{
+        display: flex;
+        margin: 34px 0;
+    }
+    footer > .top > .left > .description > p{
+        width: 249px;
+    }
+    footer > .top > .left > .description > img {
+        object-fit: contain;
+        margin-right: 23px;
+    }
+    footer > .top > .right {
+        flex-wrap: wrap;
+        /* justify-content: center; */
+    }
+    footer > .top > .right > div {
+        margin-right: 0;
+        width: 50%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    footer > .top > .right > div.contact-us {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    footer > .top > .right > .contact-us ul {
+        display: flex;
+        flex-direction: row;
+    }
+    footer > .top > .right > .contact-us ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    footer > .top > .right .contact-us > .links > a {
+        width: auto;
+        margin-right: 33px;
+        margin-bottom: 20px;
+    }
+    footer > .bottom {
+        margin-top: 0;
+    }
+    footer > .top > .right h3 {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #9CA3AF;
+        margin-bottom: 8px;
+        width: auto;
+        text-align: center;
+    }
 }

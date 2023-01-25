@@ -45,7 +45,7 @@ function FormThree() {
     ]
 
     return (
-    <form className='page-three' >
+    <form method='post' className='page-three' >
         <div className='question'>
             <img src={labelDot} alt="label-dot" />
             <p>What is the Application/Product Domain?</p>

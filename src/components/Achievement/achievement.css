@@ -42,6 +42,30 @@
     }
     .achievement > .right > img {
         width: 80%;
+        object-fit: contain;
+    }
+    .achievement > .left > .title {
+        margin: 31px 0;
+        width: 100%;
+        font-size: 25px;
+        line-height: 48px;
+    }
+    .achievement > .left > p {
+        width: 100%;
+    }
+}
+@media screen and (max-width:500px) {
+    .achievement {
+        flex-direction: column;
+    }
+    .achievement > .left {
+        width: 100%;
+    }
+    .achievement > .right {
+        width: 100%;
+    }
+    .achievement > .right > img {
+        margin-top: 50px;
     }
     .achievement > .left > .title {
         margin: 31px 0;

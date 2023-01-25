@@ -24,18 +24,28 @@ function Header() {
       window.removeEventListener('scroll', changeBackground);
     }
   }, [scrolled])
+  useEffect(() => {
+    if(showNavbar){
+      document.querySelector("body").style.overflow = "hidden"
+    }
+    return ()=> {
+      document.querySelector("body").style.overflow = "auto"
+    }
+  }, [showNavbar])
   return (
     <header className={scrolled ? "scrolled" : ""}>
       <div className="logo">
         <img src={logo} alt="logo" />
       </div>
-      <Navbar />
-      <Link to={'/hire-us'}>
-      <button>Hire Developers</button>
-      </Link>
-      {/* <div className="menu" onClick={()=> setShowNavbar(!showNavbar)}>
-        <img src={showNavbar ? hamburger : closeIcon} alt="" />
-      </div> */}
+      <div className={showNavbar ? "nav-menu active" :"nav-menu"}>
+        <Navbar />
+        <Link to={'/hire-us'}>
+        <button>Hire Developers</button>
+        </Link>
+      </div>
+      <div className="menu" onClick={()=> setShowNavbar(!showNavbar)}>
+        <img src={!showNavbar ? hamburger : closeIcon} alt="hamburger-menu" />
+      </div>
     </header>
   )
 }

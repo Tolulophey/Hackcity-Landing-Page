@@ -26,7 +26,7 @@ function FormFour() {
         }
     ]
     return (
-    <form className='page-four' >
+    <form method='post' className='page-four' >
         <div className='question'>
             <img src={labelDot} alt="label-dot" />
             <p>What is the price estimate for the project?</p>

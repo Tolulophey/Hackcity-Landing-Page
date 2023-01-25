@@ -45,8 +45,10 @@ function Footer() {
     <footer>
       <div className="top">
         <div className="left">
-          <img src={logoIcon} alt="logo-icon" />
-          <p>Making the world a better place through constructing elegant hierarchies.</p>
+          <div className="description">
+            <img src={logoIcon} alt="logo-icon" />
+            <p>Making the world a better place through constructing elegant hierarchies.</p>
+          </div>
           <div className="social-media">
             {socialMedia.map((media, index)=>{
               return (
