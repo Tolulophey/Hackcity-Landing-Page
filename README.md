@@ -1,6 +1,7 @@
 # Hackcity-Landing-Page
 HackCity Landing Page Design Implementations by interns
 
+click [here](https://hackcity-landing-page-tolulophey.vercel.app) to view the prroject deployment<br/><br/>
 Welcome to the company landing page repository! Participants will be creating their own branches and working exclusively in those branches to design and develop a landing page for our company.
 
 Please follow these steps as you contribute:
